@@ -1,11 +1,7 @@
-
 import { Hono } from "hono";
-import {auth } from "../utils/auth"
+import { auth } from "../utils/auth";
 
 const authRoutes = new Hono();
-
- 
-
 
 authRoutes.post("/register", async (c) => {
   const body = await c.req.json();
@@ -19,6 +15,18 @@ authRoutes.post("/register", async (c) => {
     asResponse: true,
   });
 
+  return result;
+});
+
+authRoutes.post("/sign-in", async (c) => {
+  const body = await c.req.json();
+  const result = await auth.api.signInEmail({
+    body: {
+      email: body.email,
+      password: body.password,
+    },
+    asResponse: true,
+  });
   return result;
 });
 
