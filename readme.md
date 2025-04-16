@@ -38,6 +38,32 @@ You need to have the following installed on your computer:
  ⚠️ If you don't want to install Postgres locally, you can use Neon instead (free serverless Postgres)
 
 
+
+# Install and Setup 
+
+## Clone the project
+
+```bash
+git clone https://github.com/alantothe/auth-starter-kit.git
+cd auth-starter-kit
+```
+> TIP: If you're planning to build your project from this starter, don’t forget to rename the root folder to match your project name.
+
+## Install Dependencies 
+
+```bash
+npm install
+```
+
+##  Choose Your Database
+
+Before continuing, decide whether you're using:
+
+- **Local PostgreSQL** (requires installing Postgres on your machine)  
+- **Neon (Serverless PostgreSQL)** [free and cloud-hosted — no setup required](https://neon.tech/)
+
+---
+
 # 🔐 Auth API Routes
 
 These are the default auth endpoints included with the starter kit using **Better Auth**, **Drizzle ORM**, and **Hono**.
