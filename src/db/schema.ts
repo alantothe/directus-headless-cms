@@ -50,7 +50,6 @@ export const verifications = pgTable("verifications", {
   updatedAt: timestamp("updated_at").defaultNow(),
 });
 
-// FINAL EXPORT
 export const schema = {
   users,
   accounts,

@@ -8,8 +8,8 @@ import protectedRoutes from "./routes/protected";
 const app = new Hono();
 
 app.use("*", corsMiddleware);
-app.route("/api", authRoutes);
-app.route("/api", protectedRoutes);
+app.route("/auth", authRoutes);
+app.route("/secure", protectedRoutes);
 
 const port = Number(process.env.PORT) || 4000;
 
