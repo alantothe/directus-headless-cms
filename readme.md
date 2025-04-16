@@ -44,7 +44,7 @@ These are the default auth endpoints included with the starter kit using **Bette
 
 ---
 
-## ✅ Available Routes
+##  Available Routes
 
 ```http
 POST /api/auth/signup
