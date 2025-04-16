@@ -69,7 +69,7 @@ The `/api/auth/me` route will **only return user data** if that token is present
 
 ---
 
-## 🧪 Example Payloads
+##  Example Payloads
 
 ### `POST /api/auth/signup`
 
