@@ -7,7 +7,7 @@ import { drizzleAdapter } from "better-auth/adapters/drizzle";
 // import db from "../db/client/client-pg-local";
 
 // Neon (for serverless):
-import db from "../db/client/client-neon";
+// import db from "../db/client/client-neon";
 //~-------------------------------------
 import { schema } from "../db/schema";
 
