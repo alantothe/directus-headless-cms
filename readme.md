@@ -36,3 +36,55 @@ You need to have the following installed on your computer:
  →PostgreSQL (for local development)
  
  ⚠️ If you don't want to install Postgres locally, you can use Neon instead (free serverless Postgres)
+
+
+# 🔐 Auth API Routes
+
+These are the default auth endpoints included with the starter kit using **Better Auth**, **Drizzle ORM**, and **Hono**.
+
+---
+
+## ✅ Available Routes
+
+```http
+POST /api/auth/signup
+POST /api/auth/signin
+GET  /api/auth/me
+```
+
+| Route              | Method | Description                            |
+|-------------------|--------|----------------------------------------|
+| `/api/auth/signup`| POST   | Create a new user (email + password)   |
+| `/api/auth/signin`| POST   | Log in an existing user                |
+| `/api/auth/me`    | GET    | Returns the logged-in user             |
+
+---
+
+## ⚠️ `/me` only works after sign-in
+
+After signing up or signing in, **Better Auth sets a session token in a cookie**.  
+The `/api/auth/me` route will **only return user data** if that token is present in the request cookies.
+
+> If you're using Postman or another client, make sure to **preserve cookies** across requests.
+
+---
+
+## 🧪 Example Payloads
+
+### `POST /api/auth/signup`
+
+```json
+{
+  "email": "test@example.com",
+  "password": "supersecure123"
+}
+```
+
+### `POST /api/auth/signin`
+
+```json
+{
+  "email": "test@example.com",
+  "password": "supersecure123"
+}
+```
