@@ -1,4 +1,4 @@
-# Drizzle + Better Auth Server Starter Kit
+# Postgres - Drizzle - Hono - Better Auth Server Starter Kit
 
 Backend starter kit with auth already set up.
 
@@ -42,7 +42,16 @@ You need to have the following installed on your computer:
  
  ⚠️ If you don't want to install Postgres locally, you can use Neon instead (free serverless Postgres)
 
+## Documentation
 
+Better Auth : https://www.better-auth.com/
+
+Hono: https://hono.dev/
+
+Drizzle: https://orm.drizzle.team/docs/overview
+
+Neon:
+[neon.tech](https://neon.tech/)
 
 # Install and Setup 
 
