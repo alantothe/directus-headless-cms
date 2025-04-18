@@ -1,12 +1,10 @@
-# Directus Headless CMS
+# Payload Headless CMS
 
 <h2 style="margin-bottom: 0.5rem;">Built with:</h2>
 <p>
-<img
-  alt="Directus"
-  src="https://img.shields.io/badge/Directus-263238?style=for-the-badge&logo=directus&logoColor=white"
-/>
+
   <img alt="TypeScript" src="https://img.shields.io/badge/typescript-007ACC?style=for-the-badge&logo=typescript&logoColor=white"/>
+  <img alt="Payload CMS" src="https://img.shields.io/badge/Payload%20CMS-444444?style=for-the-badge&logo=payloadcms&logoColor=white"/>
   <img alt="Hono" src="https://img.shields.io/badge/hono-E36002?style=for-the-badge&logo=hono&logoColor=white"/>
   <img alt="Drizzle" src="https://img.shields.io/badge/drizzle-43853D?style=for-the-badge&logo=drizzle&logoColor=white"/>
   <img alt="BetterAuth" src="https://img.shields.io/badge/betterauth-333333?style=for-the-badge&logo=fusionauth&logoColor=white"/>
