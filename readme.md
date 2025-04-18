@@ -17,8 +17,8 @@
 ## Clone the project
 
 ```bash
-git clone https://github.com/alantothe/directus-headless-cms.git
-cd directus-headless-cms
+git clone https://github.com/alantothe/payload-headless-cms.git
+cd payload-headless-cms
 ```
 
 ## Install Dependencies
