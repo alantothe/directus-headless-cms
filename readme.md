@@ -1,8 +1,3 @@
-#TO DO 
-- name table with auth and cms so it clear in the publics folder what is what
-- these tables cannot work together
-- then figure out what 
-
 # Payload Headless CMS
 
 <h2 style="margin-bottom: 0.5rem;">Built with:</h2>
