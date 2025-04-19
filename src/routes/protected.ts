@@ -1,5 +1,5 @@
 import { Hono } from "hono";
-import { auth } from "../utils/auth-config";
+import { auth } from "../services/auth/auth-config";
 
 const protectedRoutes = new Hono<{
   Variables: {

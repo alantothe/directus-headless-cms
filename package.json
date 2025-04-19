@@ -8,7 +8,13 @@
     "start": "node dist/index.js",
     "build": "tsc",
     "lint": "eslint . --ext .ts",
-    "lint:fix": "eslint . --ext .ts --fix"
+    "lint:fix": "eslint . --ext .ts --fix",
+    "payload:cli": "PAYLOAD_CONFIG_PATH=./config/payload.config.ts payload",
+    "payload:migrate:create": "npm run payload:cli -- migrate:create",
+    "payload:migrate": "npm run payload:cli -- migrate",
+    "payload:types": "npm run payload:cli -- generate:types",
+    "drizzle:init": "npx drizzle-kit generate --config=./config/drizzle-neon.config.ts --name init_schema",
+    "drizzle:migrate": "npx drizzle-kit migrate  --config=./config/drizzle-neon.config.ts"
   },
   "keywords": [],
   "author": "",
@@ -24,6 +30,7 @@
     "eslint-config-prettier": "^10.1.2",
     "eslint-plugin-import": "^2.31.0",
     "eslint-plugin-unused-imports": "^4.1.4",
+    "payload": "^3.35.1",
     "tsx": "^4.19.3",
     "typescript": "^5.8.3",
     "typescript-eslint": "^8.29.1"
@@ -32,6 +39,8 @@
   "dependencies": {
     "@hono/node-server": "^1.14.1",
     "@neondatabase/serverless": "^1.0.0",
+    "@payloadcms/db-postgres": "^3.35.1",
+    "@payloadcms/richtext-lexical": "^3.35.1",
     "bcrypt": "^5.1.1",
     "better-auth": "^1.2.5",
     "bufferutil": "^4.0.9",
